@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0D1A45"/><stop offset=".5" stop-color="#2A2C78"/><stop offset=".72" stop-color="#6A3C8E"/></linearGradient>
+  <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF1B8"/><stop offset=".45" stop-color="#FFC24D"/><stop offset=".8" stop-color="#FF7A59"/><stop offset="1" stop-color="#F0506E"/></linearGradient>
+  <radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset=".55" stop-color="#FF9F6B" stop-opacity=".55"/><stop offset="1" stop-color="#FF9F6B" stop-opacity="0"/></radialGradient>
+  <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#132A6B"/><stop offset="1" stop-color="#050C24"/></linearGradient>
+  <linearGradient id="refl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC24D"/><stop offset="1" stop-color="#F0506E" stop-opacity=".3"/></linearGradient>
+  <clipPath id="sunc"><rect x="0" y="0" width="512" height="344"/></clipPath><clipPath id="sund"><circle cx="256" cy="236" r="142"/></clipPath>
+  <filter id="sh" x="-10%" y="-20%" width="120%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000" flood-opacity=".45"/></filter>
+</defs><rect width="512" height="512" fill="url(#sky)"/>
+<g id="art">
+  <circle cx="256" cy="236" r="190" fill="url(#halo)"/>
+  <g clip-path="url(#sunc)">
+    <circle cx="256" cy="236" r="142" fill="url(#sun)"/>
+    <g fill="#2A2C78" opacity=".55" clip-path="url(#sund)"><rect x="100" y="300" width="312" height="5"/><rect x="100" y="316" width="312" height="8"/><rect x="100" y="333" width="312" height="11"/></g>
+  </g>
+  <rect x="-400" y="344" width="1312" height="600" fill="url(#sea)"/>
+  <g fill="url(#refl)"><rect x="150" y="358" width="212" height="7" rx="3.5" opacity=".9"/><rect x="178" y="374" width="156" height="6" rx="3" opacity=".7"/><rect x="206" y="389" width="100" height="5" rx="2.5" opacity=".5"/><rect x="232" y="403" width="48" height="4" rx="2" opacity=".35"/></g>
+  <path d="M420 -30 C 430 50, 410 120, 356 162" fill="none" stroke="#FFF4D6" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+  <g transform="translate(252 224) rotate(-28) scale(1.04)">
+    <path d="M-52 -50 L -44 -74 L -32 -60 L -20 -84 L -6 -64 L 8 -86 L 22 -64 L 36 -80 L 48 -58 L 62 -64 L 70 -44 C 30 -60, -10 -62, -52 -50 Z" fill="#0A1433"/>
+    <path d="M-56 50 L -44 72 L -30 62 L -18 76 L -4 64 L 8 58 Z" fill="#0A1433"/>
+    <path d="M122 4 C 104 -54, 12 -82, -60 -54 C -90 -42, -104 -22, -112 -7 L -158 -50 Q -136 0 -158 50 L -112 7 C -104 22, -90 42, -60 54 C 12 80, 104 54, 122 4 Z" fill="#0A1433"/>
+    <path d="M-56 -47 C 10 -73, 94 -50, 110 -16" fill="none" stroke="#FFE8A8" stroke-width="3.2" stroke-linecap="round" opacity=".85"/>
+    <circle cx="88" cy="-10" r="8.5" fill="#FFD27A"/>
+    <path d="M68 -30 Q 86 -40 106 -26" fill="none" stroke="#FFC234" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <path d="M356 162 c 3 9, -1 17, -10 17 c -6 0, -8 -5, -7 -9" fill="none" stroke="#FFF4D6" stroke-width="3.4" stroke-linecap="round"/>
+  <g fill="#0A1433"><circle cx="104" cy="330" r="6"/><circle cx="86" cy="312" r="4"/><circle cx="122" cy="306" r="3.4"/></g>
+  
+  <text x="256" y="494" text-anchor="middle" font-family="Arial Black, Segoe UI Black, Arial, sans-serif" font-weight="900" font-size="84" letter-spacing="10" fill="#fff" filter="url(#sh)">TPTV</text>
+</g></svg>
